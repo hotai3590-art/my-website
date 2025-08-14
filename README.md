@@ -141,7 +141,6 @@
         <div class="chip" data-target="#resources">🧰 Tài nguyên</div>
       </div>
     </header>
-
     <!-- Roadmap Section -->
     <section id="roadmap" class="grid">
       <article class="card col-8">
@@ -156,7 +155,6 @@
           <div class="item"><span class="kdot"></span><div><strong>Tháng 6:</strong> Xem tập 45′ không sub, tóm tắt 10 câu; nghe tin ngắn và kể lại.</div></div>
         </div>
       </article>
-
       <aside class="card col-4">
         <h3>🔧 Nguyên tắc học song song</h3>
         <ul class="muted">
@@ -173,13 +171,11 @@
           <span class="badge b-warn">⛔ Bỏ ôn tập</span>
         </div>
       </aside>
-
       <article class="card col-12">
         <h3>🧭 Lịch mẫu mỗi ngày</h3>
         <p class="muted">Sáng: Trung – Phát âm & lặp lại | Chiều: Anh – Từ/cụm + câu mẫu | Tối: Xem clip mỗi ngôn ngữ 5–10′ không phụ đề.</p>
       </article>
     </section>
-
     <!-- Calendar & Daily Plan Section -->
     <section id="calendar" class="grid" style="display:none">
       <article class="card col-7">
@@ -200,13 +196,11 @@
         <div class="calendar" id="calendarGrid"></div>
         <p class="muted" style="margin-top:10px">Mẹo: Di chuột để xem nhanh; bấm vào ngày để mở chi tiết, bài tập và mẫu câu.</p>
       </article>
-
       <aside class="card col-5" id="dayDetail">
         <h3>📌 Kế hoạch ngày <span id="dayLabel">—</span></h3>
         <div id="detailContent" class="list"></div>
       </aside>
     </section>
-
     <!-- Mistakes Section -->
     <section id="mistakes" class="grid" style="display:none">
       <article class="card col-12">
@@ -220,7 +214,6 @@
         </div>
       </article>
     </section>
-
     <!-- Resources Section -->
     <section id="resources" class="grid" style="display:none">
       <article class="card col-6">
@@ -247,7 +240,6 @@
         </div>
       </article>
     </section>
-
     <footer>
       Made for <strong>cậu chủ</strong> — học ít nhưng chuẩn, dùng nhiều hơn học ✨
     </footer>
