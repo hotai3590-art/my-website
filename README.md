@@ -31,7 +31,6 @@
       overflow-x: hidden;
     }
     .container{ width: min(1200px, 92vw); margin: 0 auto; }
-
     /* --- Fancy Hero --- */
     .hero{
       position: relative; padding: 72px 0 48px; text-align: center;
@@ -49,7 +48,6 @@
       50% { filter: drop-shadow(0 0 14px rgba(124,240,255,0.35)) drop-shadow(0 0 18px rgba(168,107,255,0.25)); }
     }
     .subtitle{ color: var(--muted); margin-top: 10px; font-weight: 500; }
-
     /* --- Nav --- */
     .nav{
       display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin:28px auto 10px;
@@ -60,7 +58,6 @@
     }
     .chip:hover{ transform: translateY(-2px); background: var(--panel-2); border-color: rgba(124,240,255,.35); box-shadow: var(--glow); }
     .chip.active{ border-color: var(--primary); box-shadow: var(--glow); }
-
     /* --- Panels --- */
     .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin: 24px 0 40px; }
     .card{
@@ -71,14 +68,12 @@
     .card:hover{ transform: translateY(-3px); box-shadow: var(--glow); }
     .card h3{ margin: 6px 0 8px; font-size: 20px; letter-spacing:.2px }
     .muted{ color: var(--muted); font-size: 14px; }
-
     @media (min-width: 960px){
       .col-4{ grid-column: span 4; }
       .col-6{ grid-column: span 6; }
       .col-8{ grid-column: span 8; }
       .col-3{ grid-column: span 3; }
     }
-
     /* --- Calendar --- */
     .calendar{ display:grid; grid-template-columns: repeat(7, 1fr); gap:8px; }
     .weekday{ text-align:center; color: var(--muted); font-size:12px; letter-spacing: .5px }
@@ -90,27 +85,22 @@
     .day.disabled{ opacity: .28; cursor: not-allowed; }
     .day.today{ outline: 2px solid var(--primary); box-shadow: var(--glow); }
     .day .dot{ position:absolute; bottom:8px; width:6px; height:6px; border-radius:999px; background: var(--accent) }
-
     .calendar-controls{ display:flex; gap:10px; align-items:center; justify-content:space-between; margin-bottom: 12px }
     .select, .toggle{
       background: var(--panel); border:1px solid rgba(255,255,255,0.14); color: var(--text); border-radius: 12px; padding: 10px 12px; font-weight:600;
     }
     .toggle input{ margin-right: 8px }
-
     /* --- Badges --- */
     .badge{ display:inline-flex; align-items:center; gap:6px; padding:6px 10px; font-size:12px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.04) }
     .b-ok{ border-color: rgba(63,224,168,.35) }
     .b-warn{ border-color: rgba(255,92,124,.45) }
-
     /* --- Sections --- */
     .section-title{ font-size: 24px; font-weight: 800; margin: 8px 0 14px; letter-spacing:.3px }
     .list{ display:grid; gap:10px; }
     .list .item{ display:flex; gap:12px; align-items:flex-start; background: rgba(255,255,255,0.04); padding:12px 14px; border-radius: 14px; border:1px solid rgba(255,255,255,0.08); }
     .kdot{ width:8px; height:8px; border-radius: 999px; background: var(--primary); box-shadow: 0 0 16px rgba(124,240,255,.6); margin-top: 7px }
-
     /* --- Footer --- */
     footer{ text-align:center; color: var(--muted); padding: 40px 0 60px }
-
     /* --- Float Actions --- */
     .fab{
       position: fixed; right: 18px; bottom: 18px; z-index: 50; display:flex; flex-direction:column; gap:10px;
@@ -121,7 +111,6 @@
       backdrop-filter: blur(6px);
     }
     .btn:hover{ transform: translateY(-2px); box-shadow: var(--glow); }
-
     /* --- Subtle particles --- */
     .particles{ position: fixed; inset:0; pointer-events:none; z-index:0; }
     .particle{ position:absolute; width:3px; height:3px; border-radius:50%; background: rgba(124,240,255,.8); filter: blur(0.3px); animation: floatUp linear infinite; opacity:.65 }
@@ -141,7 +130,6 @@
         <div class="chip" data-target="#resources">🧰 Tài nguyên</div>
       </div>
     </header>
-
     <!-- Roadmap Section -->
     <section id="roadmap" class="grid">
       <article class="card col-8">
@@ -156,7 +144,6 @@
           <div class="item"><span class="kdot"></span><div><strong>Tháng 6:</strong> Xem tập 45′ không sub, tóm tắt 10 câu; nghe tin ngắn và kể lại.</div></div>
         </div>
       </article>
-
       <aside class="card col-4">
         <h3>🔧 Nguyên tắc học song song</h3>
         <ul class="muted">
@@ -173,13 +160,11 @@
           <span class="badge b-warn">⛔ Bỏ ôn tập</span>
         </div>
       </aside>
-
       <article class="card col-12">
         <h3>🧭 Lịch mẫu mỗi ngày</h3>
         <p class="muted">Sáng: Trung – Phát âm & lặp lại | Chiều: Anh – Từ/cụm + câu mẫu | Tối: Xem clip mỗi ngôn ngữ 5–10′ không phụ đề.</p>
       </article>
     </section>
-
     <!-- Calendar & Daily Plan Section -->
     <section id="calendar" class="grid" style="display:none">
       <article class="card col-7">
@@ -200,13 +185,11 @@
         <div class="calendar" id="calendarGrid"></div>
         <p class="muted" style="margin-top:10px">Mẹo: Di chuột để xem nhanh; bấm vào ngày để mở chi tiết, bài tập và mẫu câu.</p>
       </article>
-
       <aside class="card col-5" id="dayDetail">
         <h3>📌 Kế hoạch ngày <span id="dayLabel">—</span></h3>
         <div id="detailContent" class="list"></div>
       </aside>
     </section>
-
     <!-- Mistakes Section -->
     <section id="mistakes" class="grid" style="display:none">
       <article class="card col-12">
@@ -220,7 +203,6 @@
         </div>
       </article>
     </section>
-
     <!-- Resources Section -->
     <section id="resources" class="grid" style="display:none">
       <article class="card col-6">
